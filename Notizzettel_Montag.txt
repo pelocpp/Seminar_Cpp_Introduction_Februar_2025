@@ -1,0 +1,129 @@
+C++ Einführung
+
+Guten Morgen 
+
+Peter Loos
+
+C/C++,  Java, C#, Mobile Apps (Java), JavaScript, (Python)
+
+20 Jahre Development (C/C++)
+
+peter.loos@gmx.de
+-----------------
+
+https://peterloos.de/
+
+====================================================================
+
+Was sind meine Erwartungen / Wünsche ???????????????????
+
+Wo stehe ich ...?
+Wo soll's hin?
+Was ist wichtig?
+
+IDE?  VS Code ?!?! Visual Studio
+
+Python ==> C++
+
+NVidia Jetson
+
+====================================================================
+
+2 Tools:
+
+Visual Studio
+
+Github.com
+
+====================================================================
+
+Namensräume  // namespace
+
+2 Phasen der Übersetzung:
+
+a) Syntax:   C/C++ COMPILER
+
+   Wenn keine Fehler: C/C++ Object File (*.obj)
+   Linux:             C/C++ Object File (*.o)
+
+b) Programm erstellen (bauen):  C/C++ LINKER
+
+C:\Development\x64\Debug\GettingStarted.exe
+
+  Windows: Ausführbares Programm: .exe
+  Linux:   Ausführbares Programm: keine Endung
+
+// =====================================================
+
+Klasse und Objekt
+
+== Eine Klasse beschreibt Daten UND Methoden
+
+== Zu / von einer Klasse legt man ein oder mehrere Objekte an
+
+Einfach gesagt: Ein Objekt ist eine Variable vom Typ der Klasse
+
+Python:  Als ersten Parameter _self (Methode)
+
+In C++ benötigen wir hierfür 3 Dateien:
+
+a) Beschreibung der Klasse (Header-Datei)
+b) Realisierung der Klasse (Implementierungs-Datei)
+c) Anwendung / Gebrauch der Klasse
+
+An einem Beispiel: Uhrzeit
+
+a) Beschreibung der Klasse:           Time.h
+b) Realisierung der Klasse:           Time.cpp
+c) Anwendung / Gebrauch der Klasse    Program.cpp
+
+// =====================================================
+
+Objekt-Orientierung
+
+Daten eines Objekts:
+
+Zielsetzungen / Paradigma:
+
+Jedes Objekt besitzt zu jedem Zeitpunkt GÜLTIGE DATEN.
+
+Zugriffsschutz:
+
+Man verbietet den DIREKTEN Zugriff auf die Membervariablen.
+
+Lösung, um dennoch eine Membervariable verändern zu können:
+
+Spezielle Methode: setter / getter
+
+Diese müssen die Parameterwerte auf KORREKTHEIT überprüfen !!!
+
+// =====================================================
+
+Objekt-Orientierung
+
+Daten eines Objekts:
+
+Zielsetzungen / Paradigma:
+
+Jedes Objekt besitzt bereits bei seiner Erzeugung GÜLTIGE DATEN.
+
+Spezielle Methoden: Konstruktor
+
+SYNTAX:   
+
+Python: __init__
+
+C++:    Name der Methode == Name der Klasse
+
+UND: Es gibt KEINEN Rückgabetyp (auch nicht void)
+
+// ===========================================================
+
+Klasse und Objekt
+
+Zugriffsschutz // private // public
+
+getter // setter
+
+Konstruktor: Standard-Konstruktor - um eine leeres Objekt vorzubelegen.
+
