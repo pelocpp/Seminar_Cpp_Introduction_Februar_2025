@@ -169,8 +169,46 @@ C ist eine prozedurale Sprache
 C++ ist der Nachfolger von C
 C ist in C++ eine ECHTE TEILMENGE / enthalten.
 
-i)  Zeiger: C
-ii) Referenzen: C++
+i)  Zeiger (Pointer):       C
+ii) Referenzen (Reference): C++
+
+Unterschiede zwischen Zeigern und Referenzen:
+
+i)  Es gibt NULL-Zeiger
+ii) Es gibt KEINE NULL-Referenz
+
+Eine Referenz-Variable ist ein ALIAS (Stellvertreter) der referenzierten Variablen.
+
+
+Nebenbemerkung:
+
+Call-by-Copy // Call-by-Value: Es können KONSTANTEN übergeben werden.
+Call-by-Address:               KONSTANTEN können NICHT übergeben werden.
+
+Tipp:
+
+Bei Parameterübergabe:
+
+Go-for-Referenz:
+
+== Besser lesbar
+== C++ stilistisch
+
+Go-for-Adresse (Zeiger / Pointer):  // Ginge
+
+== Schlechter lesbar
+== C stilistisch
+
+=============================================
+
+Hinweis:
+
+Dynamische Speicherverwaltung (new, delete):
+
+Zeiger:    Geht nur MIT Zeigern
+
+Referenz:  Geht NICHT mit Referenzen
+
 
 =============================================
 
@@ -180,4 +218,57 @@ Vorrangregeln.
 
 *   Prio 3
 .   Prio 2
+
+=============================================
+
+Const-ness: Keyword 'const'
+
+Dadurch wird der verändernde (schreibende) Zugriff verboten.
+
+A) Bei Referenzen, die als Parameter übergeben werden.
+    
+    void displayTime(const Time& time) 
+
+b) Bei Methoden in einer Klasse, um zum Ausdruck zu bringen,
+   dass diese ihre Member NICHT verändern.
+
+Es gibt da noch eine zweite Auswirkung:
+
+Der Maschinencode kann BESSER optimiert werden.
+
+// ======================================================
+
+Stolperfalle:  "What is the purpose of the Most Vexing Parse?"
+
+    Time than(); 
+    than.print();
+
+    left of '.print' must have class/struct/union
+
+Was ist than ???
+
+Ein Objekt: NEIN.
+
+than ist eine Funktion, die keine Parameter hat und ein Objekt Time zurückliefert.
+
+=============================================================
+
+Nochmal Rechteck:
+
+a) Bei der Erzeugung eines Rectangle-Objekts mit einem benutzerdefinierten Konstruktor
+werden die Koordinaten, die Breite und die Höhe des Rechtecks
+entsprechend der Parameter des Konstruktors gesetzt.
+
+b) Bei der Erzeugung eines Rectangle-Objekts mit einem benutzerdefinierten Konstruktor
+werden die Breite und die Höhe des Rechtecks
+entsprechend der Parameter des Konstruktors gesetzt.
+Die Koordinaten nehmen den Wert 0 an.
+
+c) Es wäre cool, wenn "der eine" Konstruktor "den anderen" verwendet.
+
+
+
+
+
+
 

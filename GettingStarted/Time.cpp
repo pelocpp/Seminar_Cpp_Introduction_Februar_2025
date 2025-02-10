@@ -4,12 +4,25 @@
 
 #include <iostream>
 
-Time::Time()
+Time::Time() : Time (0, 0, 0) {}
+
+//Time::Time()
+//{
+//    m_hours = 0;
+//    m_minutes = 0;
+//    m_seconds = 0;
+//}
+
+Time::Time(int hours, int minutes, int seconds)
 {
-    m_hours = 0;
-    m_minutes = 0;
-    m_seconds = 0;
+    m_hours = hours;
+    m_minutes = minutes;
+    m_seconds = seconds;
 }
+
+Time::Time(int hours, int minutes)
+    : Time (hours, minutes, 0)
+{}
 
 void Time::reset()
 {
@@ -23,7 +36,7 @@ void Time::print()
     std::cout << m_hours << ":" << m_minutes << ":" << m_seconds << '\n';
 }
 
-void Time::setHours(int hours)
+void Time::setHours(int hours)  
 {
     if (hours >= 0 && hours < 24)  // korrekt
     {
@@ -35,17 +48,17 @@ void Time::setHours(int hours)
     }
 }
 
-int Time::getHours()
+int Time::getHours() const
 {
     return m_hours;
 }
 
-int Time::getMinutes()
+int Time::getMinutes() const
 {
     return m_minutes;
 }
 
-int Time::getSeconds()
+int Time::getSeconds() const
 {
     return m_seconds;
 }

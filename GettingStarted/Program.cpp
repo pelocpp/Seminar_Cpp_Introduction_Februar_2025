@@ -4,17 +4,17 @@
 
 int n_global = 123;   // globale Variable
 
+extern void testDisplayAndResetTime();
 extern void testDisplayTime();
 extern void localVariable();
 extern void test_zeiger();
+extern void test_reference();
 extern void test_tausche();
 
-int main()
+int main_alt()
 {
-    //test_zeiger();
-    //localVariable();
-    // testDisplayTime();
-    test_tausche();
+    testDisplayTime();
+    return 1;
 }
 
 int main_hello_world()
@@ -46,6 +46,18 @@ int main_erste_schritte_oo()
     pause.setMinutes(30);
     pause.setSeconds(40);
     pause.print();
+
+    return 0;
+}
+
+// zweite Schritte
+int main()
+{
+    Time now (16, 20, 30);
+    now.print();
+
+    Time than; 
+    than.print();
 
     return 0;
 }

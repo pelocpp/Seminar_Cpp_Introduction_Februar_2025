@@ -11,8 +11,11 @@ private:
     int m_seconds;
 
 public:
-    // Konstruktor
+    // Konstruktoren
     Time();
+    Time(int hours, int minutes, int seconds);
+    Time(int hours, int minutes);
+
 
     // setter
     void setHours(int hours);
@@ -20,9 +23,9 @@ public:
     void setSeconds(int seconds);
 
     // getter
-    int getHours();
-    int getMinutes();
-    int getSeconds();
+    int getHours() const;
+    int getMinutes() const;
+    int getSeconds() const;
 
 
     // public interface / methods / function
