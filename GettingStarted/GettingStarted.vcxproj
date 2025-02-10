@@ -128,8 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Program.cpp" />
+    <ClCompile Include="Referenzen_Parameter.cpp" />
     <ClCompile Include="Time.cpp" />
-    <ClCompile Include="Time.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Time.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

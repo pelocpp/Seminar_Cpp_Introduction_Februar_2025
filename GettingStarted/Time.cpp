@@ -40,6 +40,17 @@ int Time::getHours()
     return m_hours;
 }
 
+int Time::getMinutes()
+{
+    return m_minutes;
+}
+
+int Time::getSeconds()
+{
+    return m_seconds;
+}
+
+
 void Time::setMinutes(int minutes)
 {
     if (minutes >= 0 && minutes < 60)  // korrekt

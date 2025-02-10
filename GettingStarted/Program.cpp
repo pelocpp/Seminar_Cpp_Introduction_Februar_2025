@@ -2,6 +2,21 @@
 
 #include "Time.h"
 
+int n_global = 123;   // globale Variable
+
+extern void testDisplayTime();
+extern void localVariable();
+extern void test_zeiger();
+extern void test_tausche();
+
+int main()
+{
+    //test_zeiger();
+    //localVariable();
+    // testDisplayTime();
+    test_tausche();
+}
+
 int main_hello_world()
 {
     std::cout << "Nochmal Hello World\n";
@@ -9,7 +24,7 @@ int main_hello_world()
     return 0;
 }
 
-int main()
+int main_erste_schritte_oo()
 {
     Time now;   // <=== auch hier sollte eine sinnvolle Vorbelegung stattfinden
     //now.m_hours = 999;

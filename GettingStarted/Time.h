@@ -21,6 +21,8 @@ public:
 
     // getter
     int getHours();
+    int getMinutes();
+    int getSeconds();
 
 
     // public interface / methods / function

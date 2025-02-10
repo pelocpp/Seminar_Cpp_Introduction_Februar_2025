@@ -68,7 +68,7 @@ Python:  Als ersten Parameter _self (Methode)
 In C++ benötigen wir hierfür 3 Dateien:
 
 a) Beschreibung der Klasse (Header-Datei)
-b) Realisierung der Klasse (Implementierungs-Datei)
+b) Realisierung der Klasse (Implementierungs-Datei / .cpp)  ===> .obj
 c) Anwendung / Gebrauch der Klasse
 
 An einem Beispiel: Uhrzeit
@@ -126,4 +126,58 @@ Zugriffsschutz // private // public
 getter // setter
 
 Konstruktor: Standard-Konstruktor - um eine leeres Objekt vorzubelegen.
+
+==============================================================
+
+Windows:       .h
+Linux/Unix:    .hpp
+
+Header-Dateien:
+
+// =====================================================
+
+Parameterübergabe:
+------------------
+
+Wie werden in C/C++ Parameter an Unterprogramme übergeben ???
+
+Als KOPIE - per Default / Voreinstellung // Call-by-Copy // Call-by-Value
+Als Adresse - mit & Operator // Call-by-Address
+
+Wieso ????
+
+==> Parameterübergabemechanismus.
+
+Speicher: Stack und Heap.
+
+Wie kann das sein, dass lokale Variablen nur dann "im Speicher sind",
+wenn die Funktion gerade aufgerufen wird ???
+
+Unterprogrammaufrufmechanismus
+
+Stack Frame
+
+Microcomputer Programmierung
+
+=============================================
+
+Frage:  Zeiger und / oder Referenzen.
+
+Hinweis:  C / C++
+
+C ist eine prozedurale Sprache 
+C++ ist der Nachfolger von C
+C ist in C++ eine ECHTE TEILMENGE / enthalten.
+
+i)  Zeiger: C
+ii) Referenzen: C++
+
+=============================================
+
+Mehrere Operatoren:  Zum Beispiel * und .
+
+Vorrangregeln.
+
+*   Prio 3
+.   Prio 2
 
