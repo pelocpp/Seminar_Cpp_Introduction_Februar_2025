@@ -131,6 +131,7 @@
     <ClCompile Include="Referenzen_Parameter.cpp" />
     <ClCompile Include="This.cpp" />
     <ClCompile Include="Time.cpp" />
+    <ClCompile Include="Zeichen_und_Zeichenketten.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Time.h" />

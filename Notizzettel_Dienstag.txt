@@ -95,8 +95,43 @@ if (rect1 < rect2) {                      // wenn die Fläche von rect1 kleiner a
 }
 
 
+==========================================================================
+
+Zeichen
+
+Zeichenketten
+
+a) Zeichen:
+
+Datentyp char:  EIN EINZELNES ZEICHEN.
+
+----------------------------------------------------------
+
+Zwischen den Datentypen char und int gibt es eine Beziehung. 
+
+Welcher Wert steht bei einem Zeichen im Speicher ???
+
+Tabelle:   Zeichen <=> int-Wert 
+
+ASCII-Tabelle.
+
+===========================================================
 
 
+Zeichenketten:
 
+Viele Zeichen:  "ABCDEF"
 
+Datentyp:
 
+a) Für konstante Zeichenketten: 
+
+Der Typ ist eine Adresse: Die Adresse des ERSTEN Zeichens.
+
+Diese Adresse kann/darf nicht verändert werden: Es ist eine const Adresse!
+
+b) In C++: 
+
+Hier gibt es für Zeichenketten eine Unterstützung:
+
+Klasse string.

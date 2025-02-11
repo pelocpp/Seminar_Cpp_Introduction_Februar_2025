@@ -11,9 +11,17 @@ extern void test_zeiger();
 extern void test_reference();
 extern void test_tausche();
 extern void test_this();
-
+extern void test_zeichen();
+extern void test_zeichenkette();
 
 int main()
+{
+    test_zeichenkette();
+}
+
+
+
+int main_operatoren()
 {
     // Uhrzeiten // Objekte vergleichen: Sind zwei Uhrzeiten gleich
     Time now(9, 29, 30);
