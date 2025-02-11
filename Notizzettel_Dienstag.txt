@@ -1,0 +1,102 @@
+====================================================================
+
+C++ Einführung
+
+Guten Morgen 
+
+Dienstag
+
+====================================================================
+
+Achtung:
+
+Hat eine C++ - Klasse
+
+== KEINE Konstruktoren
+
+Dann wird (nur) der Standard-Konstruktor automatisch erzeugt / bereit gestellt.
+
+== Mindestens EINEN Konstruktor:
+
+Dann muss jeder Konstruktor, den wir verwenden wollen, implementiert werden.
+-- auch der Standard-Konstruktor.
+
+====================================================================
+
+Jede Klasse in C++ hat eine spezielle Variable:
+
+this
+
+Wie ist this definiert:  Als Zeiger auf die Klasse
+
+====================================================================
+
+bool:
+
+true // false 
+
+NICHT: 0, 1, ...
+
+============================================================
+
+Ein "sehr berühmter" Fehler:
+
+'void Time::print(void)':
+
+cannot convert 'this' pointer from 'const AnyClass' to 'AnyClass &'
+
+Hmmm:
+
+Man spricht von der so genannten 'const' Kaskade:
+
+Einmal const -- Immer const
+
+Ist eine Methode const markiert
+
+==> Alle aufgerufenen Methoden müssen ebenfalls const markiert sein.
+
+============================================================
+
+Überladen von Operatoren:
+
+if (now == other) {   // besser lesbar
+    // .........
+}
+
+Wie geht das ?
+
+Wir müssen den Operator == "überladen" ????
+
+Das geht, wie eine spezielle Methode schreiben:
+
+Welchen Namen hat diese spezielle Methode: 'operator =='
+
+============================================================
+
+Übung:
+
+Klasse Rectangle
+
+Realisiere folgende Anweisungen:
+
+Rectange rect1 (1, 1, 20, 30);
+Rectange rect1 (2, 2, 20, 30);
+
+if (rect1 == rect2) {
+   // std::cout << "sind gleich\n";
+}
+
+if (rect1 != rect2) {
+   // std::cout << "sind nicht gleich\n";
+}
+
+if (rect1 < rect2) {                      // wenn die Fläche von rect1 kleiner als die Fläche von rect2 ist
+   // std::cout << "ist keiner\n";
+}
+
+
+
+
+
+
+

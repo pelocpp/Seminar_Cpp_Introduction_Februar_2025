@@ -13,6 +13,11 @@ peter.loos@gmx.de
 
 https://peterloos.de/
 
+https://github.com/pelocpp
+
+https://github.com/pelocpp/cpp_introduction
+
+
 ====================================================================
 
 Was sind meine Erwartungen / Wünsche ???????????????????
@@ -266,9 +271,4 @@ Die Koordinaten nehmen den Wert 0 an.
 
 c) Es wäre cool, wenn "der eine" Konstruktor "den anderen" verwendet.
 
-
-
-
-
-
-
+=============================================================

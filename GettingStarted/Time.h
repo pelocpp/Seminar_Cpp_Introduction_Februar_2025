@@ -31,5 +31,10 @@ public:
     // public interface / methods / function
     void reset();
     // void increment();
-    void print();
+    void print() const;
+
+    bool equals(const Time& other) const;
+
+    // overloaded operators
+    bool operator == (const Time& other) const;
 };

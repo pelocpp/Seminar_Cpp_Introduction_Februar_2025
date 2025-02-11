@@ -10,6 +10,46 @@ extern void localVariable();
 extern void test_zeiger();
 extern void test_reference();
 extern void test_tausche();
+extern void test_this();
+
+
+int main()
+{
+    // Uhrzeiten // Objekte vergleichen: Sind zwei Uhrzeiten gleich
+    Time now(9, 29, 30);
+    now.print();
+
+    Time other(17, 0, 0);
+    other.print();
+
+    bool isSame = now.equals(other);
+
+    if (now == other) {   // besser lesbar
+        std::cout << "sind gleich\n";
+    }
+    else {
+        std::cout << "sind nicht gleich\n";
+    }
+
+    int n = 123;
+    int m = 456;
+
+    if (n == m) {
+        // ......
+    }
+
+
+    return 0;
+}
+
+
+
+
+
+void main_this()
+{
+    test_this();
+}
 
 int main_alt()
 {
@@ -51,7 +91,7 @@ int main_erste_schritte_oo()
 }
 
 // zweite Schritte
-int main()
+int main_zweite_schritte()
 {
     Time now (16, 20, 30);
     now.print();

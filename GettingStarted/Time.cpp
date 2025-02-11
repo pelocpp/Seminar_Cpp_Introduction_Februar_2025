@@ -31,7 +31,7 @@ void Time::reset()
     m_seconds = 0;
 }
 
-void Time::print()
+void Time::print() const
 {
     std::cout << m_hours << ":" << m_minutes << ":" << m_seconds << '\n';
 }
@@ -86,4 +86,46 @@ void Time::setSeconds(int seconds)
     {
         m_seconds = 0;
     }
+}
+
+// ============================
+// Vergleich
+
+bool Time::equals(const Time& other) const
+{
+     //other.m_hours = other.m_hours + 1;
+     //this->m_hours = this->m_hours + 1;
+
+    if (this->m_hours != other.m_hours) {
+        return false;
+    }
+
+    if (this->m_minutes != other.m_minutes) {
+        return false;
+    }
+
+    if (this->m_seconds != other.m_seconds) {
+        return false;
+    }
+
+    print();  // benachbarte Methode DESSELBEN Objekts
+        
+    return true;
+}
+
+bool Time::operator == (const Time& other) const
+{
+    if (this->m_hours != other.m_hours) {
+        return false;
+    }
+
+    if (this->m_minutes != other.m_minutes) {
+        return false;
+    }
+
+    if (this->m_seconds != other.m_seconds) {
+        return false;
+    }
+
+    return true;
 }

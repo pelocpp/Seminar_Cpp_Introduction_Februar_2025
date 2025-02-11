@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="Program.cpp" />
     <ClCompile Include="Referenzen_Parameter.cpp" />
+    <ClCompile Include="This.cpp" />
     <ClCompile Include="Time.cpp" />
   </ItemGroup>
   <ItemGroup>
