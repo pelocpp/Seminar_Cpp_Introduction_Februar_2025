@@ -179,7 +179,6 @@ void test_stl_07()
     }
 }
 
-
 void test_stl()
 {
     test_stl_07();
