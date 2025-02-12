@@ -127,10 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bibliothek_STL.cpp" />
     <ClCompile Include="Dynamic.cpp" />
     <ClCompile Include="Namensraeume.cpp" />
     <ClCompile Include="Program.cpp" />
     <ClCompile Include="Referenzen_Parameter.cpp" />
+    <ClCompile Include="Schablone.cpp" />
     <ClCompile Include="This.cpp" />
     <ClCompile Include="Time.cpp" />
     <ClCompile Include="Vererbung.cpp" />

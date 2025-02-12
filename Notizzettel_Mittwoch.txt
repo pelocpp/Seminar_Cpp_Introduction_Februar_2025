@@ -16,7 +16,14 @@ A) Vor freien Funktionen:
 
 b) In freien Funktionen:
 
-c) In Klassen
+   Eine lokale Variable wird zu einer globalen Variablen
+   (die aber nur innerhalb der Funktion verfügbar ist)
+
+
+c) In Klassen:
+
+   static bewirkt, dass aus einer Methode eine Funktion wird (KEIN ZUGRIFF AUF Member Variablen möglioch)
+   Diese wird an der Klasse aufgerufen.
 
 ====================================================================
 
@@ -211,4 +218,161 @@ Wir betrachten auch ein Sparbuch wie / als ein Konto.
 
    addInterest (4.5, 100) // es werden für 100 Tage Zinsen mit einem Zinssatz von 4.5% gutgeschrieben.
 
+
+=========================================================================
+
+Bibliothek: STL
+
+a) Template // Schablone
+
+b) Bibliothek
+
+========================================================================
+
+Konzept:   Templates  // Schablone (Vorlage) // Generics
+
+Eine Schablone definiert eine Klasse // eine (freie) Funktion,
+
+   nur ohne KONKRETE Datentypen.  Die Datentypen werden - wie eine VARIABLE - allgemein gehalten.
+
+   ==> Vorlage // Schablone
+
+========================================================================
+
+C++: Bjarne Stroustrup
+
+Alexander Stepanov:  Generische Programmierung (Templates)
+
+Bibliothek:  C++   STL:  Standard Template Library
+
+STL:
+
+== Container
+== Iterator
+== Algorithmus
+
+Was ist ein Container:
+
+Ein Objekt dass Daten aufnehmen kann.
+
+== Arrays:
+
+Hier gibt es prinzipiell 2 Möglichkeiten:
+
+a) FESTE LÄNGE
+
+   Gibt es in C / C++
+
+
+b) VARIABLE LÄNGE (append)
+
+   == Python
+   == C++: Klasse 'vector'   // Dies ist ein SEQUENTIELLER Container (an der 3. Stelle // [3])
+
+Capacity:
+
+1, 2, 3, 4, 6, 9, 13, 19, 28, 42, 63, 94
+
+Wir berechnet sich die "nächst-größere" Kapazität ???
+
+neu = alt * 1.5
+
+===================
+
+Hinweis:
+
+std::vector:  Feld variabler Länge
+
+Wenn man in etwa die Endlänge vorab weiß:  reserve !!!!!!!!!!!!!!!!!!!
+
+
+===================
+
+Welche Container gibt es in C++ ???
+
+Anforderungen:
+
+ZB: Telefonbuch:   Name ("Meier") ==> Tel.Nummer (234456)
+
+      Entspricht einer Hashtabelle (Python: Dictionary)
+
+      Dictionary:  Tabelle mit 2 Spalten: Schlüssel ("Meier") ==> Wert ("Value"):
+
+      Wie komme ich AM SCHNELLSTEN von "Meier" zum Wert.  // Index // Hash-Wert
+
+
+Zum Beispiel:
+
+std::forward_list // std::list
+
+std::unorderer_map
+
+==> Hashtabelle  Ist KEIN SEq. Container // assoziativer Container: Schlüssel ==> Wert
+
+    Hier gibt es KEINEN Index.
+
+===================================================
+
+Container  =======>  Iterator
+
+Was ist ein Iterator ???
+
+a) Ein Objekt (Zeiger)
+
+b) Es beschreibt eine Position in einem Container
+
+c) Es gibt Iteratoren für ALLE Container von BELIEBIGEM Typ
+
+   ===> Ein Container bringt den Typ seines Iterators mit
+
+Wie bekomme ich einen Iterator ???
+
+Von einem Container: 2 Methoden:
+
+== begin()
+== end()
+
+==============================================================
+
+STL: 
+
+Das Fundament der STL sind:
+
+== Container      zB std::vector
+== Iterator       begin(), end()
+== Algorithmus    zB std::for_each
+
+Algorithmen verwenden freie Funktionen
+(( oder Lambdas ))
+
+==============================================================
+
+Übung:
+
+Teuflische Folge:
+
+Zahlenfolge:
+
+Startwert n:
+
+Folgewert:
+
+n => n / 2                  wenn n gerade ist
+n => 3 * n + 1              wenn n ungerade ist
+
+Beispiel:
+
+7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1:  ENDE 
+
+Endliche Folge - für n =  7
+
+Es konnte bis HEUTE nicht bewiesen werden, dass für jeden Startwert die Folge ENDLICH ist.
+
+Aufgabe:
+
+Erstellen Sie ein Programm, das beginnend mit einem festen Startwert die einzelnen Elemente berechnet.
+
+Diese Werte sind in einem Container std::vector einzutragen // Abzulegen.
+
+NACH der Berechnung ist der Container auf der Konsole auszugeben  (std::for_each // freie Funktion)
 

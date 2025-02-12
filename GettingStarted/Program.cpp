@@ -14,11 +14,13 @@ extern void test_this();
 extern void test_zeichen();
 extern void test_zeichenkette();
 extern void test_dynamic();
-extern  void test_vererbung();
+extern void test_vererbung();
+extern void test_schablone();
+extern void test_stl();
 
 int main()
 {
-    test_vererbung();
+    test_stl();
 }
 
 

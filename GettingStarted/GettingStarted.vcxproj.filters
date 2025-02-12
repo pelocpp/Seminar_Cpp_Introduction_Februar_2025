@@ -39,6 +39,12 @@
     <ClCompile Include="Vererbung.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Schablone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bibliothek_STL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Time.h">
