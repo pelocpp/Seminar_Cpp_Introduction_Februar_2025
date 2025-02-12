@@ -127,10 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Dynamic.cpp" />
+    <ClCompile Include="Namensraeume.cpp" />
     <ClCompile Include="Program.cpp" />
     <ClCompile Include="Referenzen_Parameter.cpp" />
     <ClCompile Include="This.cpp" />
     <ClCompile Include="Time.cpp" />
+    <ClCompile Include="Vererbung.cpp" />
     <ClCompile Include="Zeichen_und_Zeichenketten.cpp" />
   </ItemGroup>
   <ItemGroup>

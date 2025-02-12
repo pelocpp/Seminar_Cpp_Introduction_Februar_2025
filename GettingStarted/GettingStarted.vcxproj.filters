@@ -30,6 +30,15 @@
     <ClCompile Include="Zeichen_und_Zeichenketten.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Namensraeume.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynamic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vererbung.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Time.h">

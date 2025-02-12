@@ -135,3 +135,34 @@ b) In C++:
 Hier gibt es für Zeichenketten eine Unterstützung:
 
 Klasse string.
+
+// =================================================================
+
+STACK:
+
+Wofür sind Variablen auf dem Stack eigentlich geeignet ???
+
+Für Zwischenergebnisse
+Für temp. Daten
+
+// =================================================================
+
+HEAP:
+
+Wofür sind Variablen auf dem HEAP eigentlich geeignet ???
+
+Für Daten, die man länger benötigt.
+
+Es wird reserviert (allokiert, Speicher vergeben), wenn man die Daten benötigt.
+Es wird freigegeben (deallokiert), wenn man die Daten nicht mehr benötigt.
+
+Mit new / delete!
+
+Zu JEDEM new GEHÖRT EIN delete !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// =================================================================
+
+Konstruktor
+Destruktor
+
+

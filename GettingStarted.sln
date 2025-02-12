@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3033BFE0-2186-41D8-A992-192BC00229AB}"
 	ProjectSection(SolutionItems) = preProject
 		Notizzettel_Dienstag.txt = Notizzettel_Dienstag.txt
+		Notizzettel_Mittwoch.txt = Notizzettel_Mittwoch.txt
 		Notizzettel_Montag.txt = Notizzettel_Montag.txt
 	EndProjectSection
 EndProject

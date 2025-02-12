@@ -1,0 +1,214 @@
+====================================================================
+
+C++ Einführung
+
+Guten Morgen 
+
+Mittwoch
+
+====================================================================
+
+static:
+
+A) Vor freien Funktionen:
+
+   Dann ist die Funktion nur in der aktuellen Datei (wo sie definiert / implementiert wird) verfügbar.
+
+b) In freien Funktionen:
+
+c) In Klassen
+
+====================================================================
+
+Paradigmen:
+
+== Schutz   ==> private  // Information Hiding
+
+== Immer einen gültigen Zustand (Instanzvariablen / State): Konstruktoren // setter 
+
+== Kapselung ==> Klasse (  Rechteck:   x,y   breite, hoehe ===>  alles, was zum Rechteck gehört, in EINER Klasse )
+
+== Wiederverwendung: Funktionen / Daten // Prinzip der Vererbung
+
+=====================================================================
+
+Wann kann / sollte man Vererbung überhaupt einsetzen ?????
+
+Beziehungen // Relationships // Software-Design
+
+Beispiel:
+
+== Rechteck
+
+== Farbige Rechtecke
+
+Satz: 
+
+Ein farbiges Rechteck ist ein Rechteck.
+
+Software-Design:  Ein farbiges Rechteck ist-ein // is-a Rechteck.
+
+Ist-Ein Beziehung:
+-----------------
+
+Ein Button ist-ein Control / Steuerelement
+
+Ist-Ein Beziehung:  VORRAUSSETZUNG für VERERBUNG
+
+------------------------------------------------
+
+Probe:
+
+== Punkt
+== Linie
+
+Satz:
+
+Eine Linie besteht aus mehreren Punkten  (zB 2 / Anfang / Ende)
+
+Eine Linie (hat einen) hat zwei Punkte (zB Anfang / Ende):
+
+hat-ein (Singular / Plural)
+has-a relationship
+------------------
+
+Wie wird diese auf das Design von Software angewendet ??? 
+==> Frage / Festlegung: Welche Instanzvariablen gehören zu einer Klasse !
+
+class Line 
+{
+private:
+    Point m_begin;
+    Point m_end;
+}
+
+
+Frage:
+
+Ein Punkt ist eine Linie:  ??? NEIN
+Eine Linie ist ein Punkt:  ??? NEIN
+
+==> Zwischen Punkt und Linie können wir NIEMALS das Prinzip der Vererbung einsetzen.
+
+
+================================================================
+
+Vererbung:
+
+Eine allgemeingültige Umsetzung:  C++, C#, Java, ..............
+
+C++: Gäbe es Varianten.
+
+ColoredRectangle
+Neuer Zugriffsschutz:
+
+protected:
+
+Von innen wie public
+Von außen wie private
+
+====================================================================
+
+2 Varianten:
+
+Wie greife ich auf die Elemente der Basisklasse zu ????
+
+== via Protected
+
+== NUR ÜBER DAS public interface  (ich tendiere hierzu )
+
+
+====================================================================
+
+Virtueller Methodenaufrufmechanismus:
+
+'virtual':
+
+Die Entscheidung, welche Methode aufgerufen wird, wird zur LAUFZEIT getroffen.
+
+Runtime-Binding // Late-Binding
+
+-------------------------------------------------------------
+
+Ohne 'virtual':
+
+Compile-Time // Early-Bindung
+
+=====================================================================
+
+Beobachtung:
+
+Eine Methode der Basisklasse kann
+
+A) an die Kindklasse vererbt werden 
+
+B) sie kann von der Kindklasse ERSETZT / Ausgetauscht werden
+
+C) von der Kindklasse ERWEITERT werden.
+
+Fazit:
+
+A) Gut / Passt // es gibt keinen Grund hier eine Änderung vorzunehmen
+
+B) KRITISCH // haben wir wirklich die Ist-Ein Beziehung vorliegen ??? // Code-Smell
+
+C) Gut / Passt // es gibt Gründe, eine Änderung == Erweiterung vorzunehmen
+
+==========================================================================
+
+Mache ich jetzt virtuell oder nicht ??????????????
+
+virtual: Ist eine Einladung zum Überschreiben von Kindklassen.
+
+   Grundfunktionalität.
+
+---
+
+Feeling: Wüsste nicht, was man da noch hinzufügen könnte.
+
+Kein virtual.
+
+============================================================================
+
+VORSICHT:
+
+Überall virtual hinschreiben ist KEINE GUTE IDEE:
+
+'virtual' ist LANGSAMER als 'ohne virtual'
+
+============================================================================
+============================================================================
+
+Ein Konto
+
+class Account
+
+== Kontostand: m_balance
+
+== Einzahlen:  m_balance addiert            to deposit
+== Abheben:    m_balance subtrahiert        to withdraw
+
+// Es ist auch ein negativer Kontostand erlaubt.
+
+
+-----------------------------------
+
+Schülerkonto:
+
+Wodurch unterscheidet sich ein Schülerkonto von einem Konto:
+
+== Abheben geht nicht, wenn Kontostand negativ wird (keine Überziehung)
+
+-----------------------------------
+
+Sparbuch:
+
+Wir betrachten auch ein Sparbuch wie / als ein Konto.
+
+== Da kann man sich Zinsen gutschreiben lassen:     // Zinsen:  interest
+
+   Methode addInterest  (double zinssatz, int tage)
+
+   addInterest (4.5, 100) // es werden für 100 Tage Zinsen mit einem Zinssatz von 4.5% gutgeschrieben.
+
+
